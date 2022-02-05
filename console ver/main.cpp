@@ -1,33 +1,42 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
+
+using namespace std;
+
+class Intro{
+   public: 
+      void run(){
+      };
+};
 
 class Prologue{
    public:
       void run(){
-         std::cout << "running" << std::endl;
-      }
-}
+         cout << "running" << endl;
+      };
+};
 
 class Kim{
    public:
       void run(){
-         std::cout << "running" << std::endl;
-      }
-}
+         cout << "running" << endl;
+      };
+};
 
 class Angel{
    public:
       void run(){
-         std::cout << "running" << std::endl;
-      }
-}
+         cout << "running" << endl;
+      };
+};
 
 class Liah{
    public:
       void run(){
-         std::cout << "running" << std::endl;
-      }
-}
+         cout << "running" << endl;
+      };
+};
 
 int main()
 {
@@ -39,4 +48,4 @@ int main()
    prologue.run()
   
   return 0;
-}
+};
