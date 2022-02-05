@@ -7,11 +7,35 @@ class Prologue{
       }
 }
 
+class Kim{
+   public:
+      void run(){
+         std::cout << "running" << std::endl;
+      }
+}
+
+class Angel{
+   public:
+      void run(){
+         std::cout << "running" << std::endl;
+      }
+}
+
+class Liah{
+   public:
+      void run(){
+         std::cout << "running" << std::endl;
+      }
+}
+
 int main()
 {
    Prologue prologue;
+   Angel angel;
+   Kim kim;
+   Liah liah;
+   
    prologue.run()
-   std::cout << "hello" << std::endl;
   
   return 0;
 }
