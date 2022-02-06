@@ -56,11 +56,14 @@ class Intro
 };
 
 class Prologue{
-    // This variable is to store the chosen girl in the prologue
-	int girl;
-    // String None is the variable that holds the players chosen option
-	string None;
+   
    public:
+	   	 // This variable is to store the chosen girl in the prologue
+		int girl;
+	    // String None is the variable that holds the players chosen option
+		string None;
+		// String name of the mc
+		string name;
    
       // First Scene in the Prologue
 	  int scene1(){
@@ -129,7 +132,7 @@ class Prologue{
 	  	}
 	  	else
 	  	{
-	  		cout << "Not an Option" << endl;
+	  		cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
 	  		getline(cin, None);
 	  	}	
 
@@ -145,6 +148,7 @@ class Prologue{
       void scene2()
       {
       	Sleep(3000);
+      	cout << "\n\n";
       	cout << "*Bell rings* -- Lunch Break\n"<< endl;
       	Sleep(3000);
       	cout << "Inner Monologue" << endl;
@@ -194,17 +198,20 @@ class Prologue{
       	} 
       	else 
       	{
+	  		cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
+	  		getline(cin, None);
 
       	}
       	
       	}
+      }
 
         // Third Scene End of classes
 
         void scene3()
         {
-            string name;
             Sleep(3000);
+            cout << "\n\n";
             cout << "*Bell rings" << endl;
             cout << "*End of the day\n" << endl;
             Sleep(3000);
@@ -227,8 +234,10 @@ class Prologue{
             Sleep(3000);
             cout << "I didn't notice the time and fell asleep.\n" << endl;
             Sleep(3000);
-            cout << "You need to go home; the school is getting ready to close up. What's you name?" << endl;
+            cout << "You need to go home; the school is getting ready to close up. What's you name?\n" << endl;
+            cout << "Name: ";
             getline (cin, name);
+            cout << "\n";
             cout << "I'm " << name << ".\n";
             Sleep(3000);
             cout << "[Cath]: Ok " << name << " you need to go home now.\n" << endl;
@@ -251,7 +260,7 @@ class Prologue{
                 }
                 else if (None == "3")
                 {
-
+                	break;
                 }
                 else if (None == "4")
                 {
@@ -269,7 +278,9 @@ class Prologue{
                     Sleep(3000);
                     cout << "Inner Monologue" << endl;
                     cout << "She's so beautiful I can't even make eye contact with her.\n" << endl;
+                    Sleep(2000);
                     cout << "The bus arrives and I sit behind her.\n" << endl;
+                    Sleep(2000);
                     cout << "After 5 minutes the bus stopped and she stood up\n" << endl;
                     Sleep(3000);
                     cout << "Thanks again " << name << ".\n" << endl;
@@ -280,9 +291,18 @@ class Prologue{
                     cout << "She went out of the bus stop, but I kept looking at her because she's really... really beautiful.\n" << endl;
                     Sleep(3000);
                     cout << "End of Prologue\n" << endl;
+                    break;
                 }
+                else
+                {
+
+	  			cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
+	  			getline(cin, None);
+                };
             }
-        }
+
+    
+        
       }
 
 
@@ -291,42 +311,70 @@ class Prologue{
 
 class Kim{
    public:
-      void run(){
-         cout << "running" << endl;
-      };
+   	string name;
+
+   	Kim(string name){
+         name = name;
+   	};
+
+   	void scene1(){
+    	cout << name;
+    };
+    
+
    
       
 };
 
 class Angel{
    public:
-      void run(){
-         cout << "running" << endl;
-      };
+   	string name;
+   	Angel(string name){
+         name = name;
+   	};
+    
+   	void scene1(){
+    	cout << name;
+    }
 };
 
 class Liah{
    public:
-      void run(){
-         cout << "running" << endl;
-      };
+   	string name;
+   	Liah(string name){
+         name = name;
+   	};
+
+    void scene1(){
+    	cout << name;
+    }
 };
 
 int main()
 {
    int None;
+   string name = "";
    Intro intro;
    Prologue prologue;
-   Angel angel;
-   Kim kim;
-   Liah liah;
+   Angel angel(name);
+   Kim kim(name);
+   Liah liah(name);
    
    intro.run();
     // Checks if the user wants to play
    if(intro.ask() == 1)
    {
-      prologue.scene1();
-      prologue.scene2();
+     // prologue.scene1();
+     // prologue.scene2();
+      prologue.scene3();
+
+      name = prologue.name;
+      angel.scene1();
+
+
+
+
+
    	cin >> None;
    }
     // IF the user doesn't want to play then run this
