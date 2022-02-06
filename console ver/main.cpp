@@ -175,9 +175,9 @@ class Prologue{
             Sleep(3000);
             cout << "[MC]: What do you mean? I got here first. There is a line, stupid.\n" << endl;
             Sleep(3000);
-            cout << "[???]: So what? I'm hungry, mind your own business." << endl;
+            cout << "[???]: So what? I'm hungry, mind your own business.\n" << endl;
             Sleep(3000);
-            cout << "[MC]: Do you think you're the only one hungry here?" << endl;
+            cout << "[MC]: Do you think you're the only one hungry here?\n" << endl;
       		break;
       	}
       	else if(None == "2")	
@@ -203,13 +203,14 @@ class Prologue{
 
         void scene3()
         {
+            string name;
             Sleep(3000);
-            cout << "*Bell rings\n" << endl;
+            cout << "*Bell rings" << endl;
             cout << "*End of the day\n" << endl;
             Sleep(3000);
             cout << "Inner Monologue" << endl;
             cout << "[MC]: I don't wanna go home; it's not like there's anyone at home anyways.\n" << endl;
-            cout << "*after a while I fell asleep\n" << endl;
+            cout << "*after a while I fell asleep*\n" << endl;
             Sleep(3000);
             cout << "[???]: Hey, wake up...\n" << endl;
             Sleep(3000);
@@ -219,10 +220,68 @@ class Prologue{
             Sleep(3000);
             cout << "[MC]: Ugh, who are you?\n" << endl;
             Sleep(3000);
-            cout << "Inner Monologue\n" << endl;
-            cout << "(I can't clearly see her face because I'm still in dazed)\n" << endl;
-            Sleep(3000); 
+            cout << "Inner Monologue" << endl;
+            cout << "*I can't clearly see her face because I'm still dazed.*\n" << endl;
+            Sleep(3000);
+            cout << "Hi I'm Pascual Cath, I'm the school president. Why are you still in school?\n" << endl;
+            Sleep(3000);
+            cout << "I didn't notice the time and fell asleep.\n" << endl;
+            Sleep(3000);
+            cout << "You need to go home; the school is getting ready to close up. What's you name?" << endl;
+            getline (cin, name);
+            cout << "I'm " << name << ".\n";
+            Sleep(3000);
+            cout << "[Cath]: Ok " << name << " you need to go home now.\n" << endl;
+            Sleep(3000);
+            cout << "*I noticed that she's carrying something big*\n" << endl;
+            Sleep(3000);
+            cout << "Responses:\n[1] Go back to sleep.\n[2] Ask her to sleep beside you.\n [3] Go home by yourself and mind your own business.\n [4] Help her carry that something big\n" << endl;
+            cout << "Option: ";
+            getline(cin, None);
 
+            while (true)
+            {
+                if (None == "1")
+                {
+                    break;
+                }
+                else if (None == "2")
+                {
+                    break;
+                }
+                else if (None == "3")
+                {
+
+                }
+                else if (None == "4")
+                {
+                    Sleep(3000);
+                    cout << "[MC]: Hey, do you need help with that thing?\n" << endl;
+                    Sleep(3000);
+                    cout << "Yeah... *blush*\n" << endl;
+                    Sleep(3000);
+                    cout << "Inner Monologue" << endl;
+                    cout << "I carried the big thing that she was carrying and accompanied her to the bus stop.\n" << endl;
+                    Sleep(3000);
+                    cout << "Thanks for helping me, will you also take the bus?\n" << endl;
+                    Sleep(3000);
+                    cout << "[MC]: Yep...\n" << endl;
+                    Sleep(3000);
+                    cout << "Inner Monologue" << endl;
+                    cout << "She's so beautiful I can't even make eye contact with her.\n" << endl;
+                    cout << "The bus arrives and I sit behind her.\n" << endl;
+                    cout << "After 5 minutes the bus stopped and she stood up\n" << endl;
+                    Sleep(3000);
+                    cout << "Thanks again " << name << ".\n" << endl;
+                    Sleep(3000);
+                    cout << "*hums* uh-.. Y-yeah no problem... *blush*\n" << endl;
+                    Sleep(3000);
+                    cout << "Inner Monologue" << endl;
+                    cout << "She went out of the bus stop, but I kept looking at her because she's really... really beautiful.\n" << endl;
+                    Sleep(3000);
+                    cout << "End of Prologue\n" << endl;
+                }
+            }
         }
       }
 
