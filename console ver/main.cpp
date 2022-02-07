@@ -66,144 +66,156 @@ class Prologue{
 		string name;
    
       // First Scene in the Prologue
-	  int scene1(){
-	  	cout << endl;
-	  	cout << "It's my first day of school and Im running pretty late. This happened because I pulled an all-nighter playing a game." << endl;
-         // The sleep command came from the header <windows.h> it is use to delay the output in the console
-	  	Sleep(4000);
-	  	cout << endl;
-	  	cout << "I was grinding for a Dark Iron Sword for my game." << endl;
-	  	cout << endl;
-	  	Sleep(3000);
-	  	cout << "Hopefully I won't be late on the first day of school." << endl;
-	  	Sleep(3000);
-	  	cout << endl;
-	  	cout << "*THUMP*"<< endl;
-	  	cout << endl;
-	  	Sleep(3000);
-	  	cout << "[Angel]: Hey! Why did you bump into me?" << endl;
-	  	Sleep(3000);
-	  	cout << endl;
-	  	cout << "Responses:\n[1] Sorry *helps her* \n[2] I'm so sorry *helps and escort her*\n[3] … (...)\n[4] *Start Panicking"<<endl;
-	  	cout << "Option: ";
-          
-          //get line is the same as cin and scanf the difference is that getline reads the whole line
-	  	getline(cin, None);
-	  	cout << endl;
+		int scene1()
+		{
+			cout << endl;
+			cout << "It's my first day of school and Im running pretty late. This happened because I pulled an all-nighter playing a game." << endl;
+			// The sleep command came from the header <windows.h> it is use to delay the output in the console
+			Sleep(4000);
+			cout << endl;
+			cout << "I was grinding for a Dark Iron Sword for my game." << endl;
+			cout << endl;
+			Sleep(3000);
+			cout << "Hopefully I won't be late on the first day of school." << endl;
+			Sleep(3000);
+			cout << endl;
+			cout << "*THUMP*" << endl;
+			cout << endl;
+			Sleep(3000);
+			cout << "[Angel]: Hey! Why did you bump into me?" << endl;
+			Sleep(3000);
+			cout << endl;
+			cout << "Responses:\n[1] Sorry *helps her* \n[2] I'm so sorry *helps and escort her*\n[3] … (...)\n[4] *Start Panicking" << endl;
+			cout << "Option: ";
 
-	  	// While statement to keep repeating until the user chooses a valid option
-	  	while (true)
-	  	{
-        // If the users pick the option then this block of code will run
-	  	if (None == "1")
-	  	{
-	  		cout << "1";
-	  		break;
-	  	}
-	  	else if (None == "2") 
-	  	{
-	  		Sleep(3000);
-	  		cout << "*While walking her to the classroom*"<< endl << endl;
-	  		Sleep(3000);
-	  		cout << "[Angel]: Are you new to this school?" << endl << endl;
-	  		Sleep(3000);
-	  		cout << "[MC]: Yea kind of" << endl;
+			// get line is the same as cin and scanf the difference is that getline reads the whole line
+			getline(cin, None);
+			cout << endl;
 
-	  		cout << endl;
-	  		Sleep(3000);
-	  		cout << "*I Escorted her to her class*"<< endl << endl;
-	  		Sleep(3000);
-	  		cout << "[Angel]: Thanks for escorting me\n\n*In class*\n" << endl;
-	  		Sleep(3000);
-	  		cout << "Inner monologue" << endl;
-	  		cout << "[MC]: Damn, that woman I just bumped looked gorgeous.\n" << endl;
-	  		Sleep(3000);
-	  		break;	
-	  	}
-	  	else if ( None == "3")
-	  	{
-	  		cout << "3";
-	  		break;
-	  	}
-	  	else if ( None == "4")
-	  	{
-	  		cout << "4";
-	  		break;
-	  	}
-	  	else
-	  	{
-	  		cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
-	  		getline(cin, None);
-	  	}	
+			// While statement to keep repeating until the user chooses a valid option
+			while (true)
+			{
+				// If the users pick the option then this block of code will run
+				if (None == "1")
+				{
+					cout << "1";
+					break;
+				}
+				else if (None == "2")
+				{
+					Sleep(3000);
+					cout << "*While walking her to the classroom*" << endl
+						 << endl;
+					Sleep(3000);
+					cout << "[Angel]: Are you new to this school?" << endl
+						 << endl;
+					Sleep(3000);
+					cout << "[MC]: Yea kind of" << endl;
 
+					cout << endl;
+					Sleep(3000);
+					cout << "*I Escorted her to her class*" << endl
+						 << endl;
+					Sleep(3000);
+					cout << "[Angel]: Thanks for escorting me\n\n*In class*\n"
+						 << endl;
+					Sleep(3000);
+					cout << "Inner monologue" << endl;
+					cout << "[MC]: Damn, that woman I just bumped looked gorgeous.\n"
+						 << endl;
+					Sleep(3000);
+					break;
+				}
+				else if (None == "3")
+				{
+					cout << "3";
+					break;
+				}
+				else if (None == "4")
+				{
+					cout << "4";
+					break;
+				}
+				else
+				{
+					cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
+					getline(cin, None);
+				}
+			};
+		}
 
-	  	};
+		// Second Scene in the Prologue
+		// Almost the same as the first scene
+		// compose of cout, cin, Sleep, while and if and else statements.
+		void scene2()
+		{
+			Sleep(3000);
+			cout << "\n\n";
+			cout << "*Bell rings* -- Lunch Break\n"
+				 << endl;
+			Sleep(3000);
+			cout << "Inner Monologue" << endl;
+			cout << "[MC]: *groans* Finally, it's lunch time, time to go to the cafeteria.\n"
+				 << endl;
+			Sleep(3000);
+			cout << "[MC]: *ugh* Eventually, after a while lining up in this line, I can now order." << endl
+				 << endl;
+			Sleep(3000);
+			cout << "Waitress: What do you want?!" << endl
+				 << endl;
+			Sleep(3000);
+			cout << "Inner Monologue" << endl;
+			cout << "[MC]: Suddenly, from my back I felt a sudden force.\n"
+				 << endl;
+			Sleep(2000);
+			cout << "*Thump*" << endl
+				 << endl;
+			Sleep(3000);
+			cout << "[Mc]: Stupid bastard bumped me.\n"
+				 << endl;
+			Sleep(3000);
+			cout << "Responses:\n[1] Be angry ( Temporary)\n[2] Let her be\n"
+				 << endl;
+			cout << "Option: ";
+			getline(cin, None);
 
+			while (true)
 
-	  }
-    
-      // Second Scene in the Prologue
-    // Almost the same as the first scene
-    // compose of cout, cin, Sleep, while and if and else statements.
-      void scene2()
-      {
-      	Sleep(3000);
-      	cout << "\n\n";
-      	cout << "*Bell rings* -- Lunch Break\n"<< endl;
-      	Sleep(3000);
-      	cout << "Inner Monologue" << endl;
-      	cout << "[MC]: *groans* Finally, it's lunch time, time to go to the cafeteria.\n"<< endl;
-      	Sleep(3000);
-      	cout << "[MC]: *ugh* Eventually, after a while lining up in this line, I can now order."<< endl << endl;
-      	Sleep(3000);
-      	cout << "Waitress: What do you want?!" << endl << endl;
-      	Sleep(3000);
-      	cout << "Inner Monologue" << endl;
-      	cout << "[MC]: Suddenly, from my back I felt a sudden force.\n" << endl;
-      	Sleep(2000);
-      	cout <<"*Thump*" <<endl <<endl;
-      	Sleep(3000);
-      	cout << "[Mc]: Stupid bastard bumped me.\n"<< endl;
-      	Sleep(3000);
-      	cout << "Responses:\n[1] Be angry ( Temporary)\n[2] Let her be\n" << endl;
-      	cout << "Option: ";
-      	getline(cin, None);
-      	
-      	while (true)
-      	
-      	{
-      	if(None == "1")
-      	{	
-            Sleep(3000);
-            cout << "[???]: Hey what's with you?!\n" << endl;
-            Sleep(3000);
-            cout << "[MC]: What do you mean? I got here first. There is a line, stupid.\n" << endl;
-            Sleep(3000);
-            cout << "[???]: So what? I'm hungry, mind your own business.\n" << endl;
-            Sleep(3000);
-            cout << "[MC]: Do you think you're the only one hungry here?\n" << endl;
-      		break;
-      	}
-      	else if(None == "2")	
-      	{
-      		break;
-      	}
-      	else if(None == "3")
-      	{
-      		break;
-      	}
-      	else if(None == "4")
-      	{
-      		break;
-      	} 
-      	else 
-      	{
-	  		cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
-	  		getline(cin, None);
-
-      	}
-      	
-      	}
+			{
+				if (None == "1")
+				{
+					Sleep(3000);
+					cout << "[???]: Hey what's with you?!\n"
+						 << endl;
+					Sleep(3000);
+					cout << "[MC]: What do you mean? I got here first. There is a line, stupid.\n"
+						 << endl;
+					Sleep(3000);
+					cout << "[???]: So what? I'm hungry, mind your own business.\n"
+						 << endl;
+					Sleep(3000);
+					cout << "[MC]: Do you think you're the only one hungry here?\n"
+						 << endl;
+					break;
+				}
+				else if (None == "2")
+				{
+					break;
+				}
+				else if (None == "3")
+				{
+					break;
+				}
+				else if (None == "4")
+				{
+					break;
+				}
+				else
+				{
+					cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
+					getline(cin, None);
+				}
+			}
       }
 
         // Third Scene End of classes
@@ -277,9 +289,10 @@ class Prologue{
                     cout << "[MC]: Yep...\n" << endl;
                     Sleep(3000);
                     cout << "Inner Monologue" << endl;
-                    cout << "She's so beautiful I can't even make eye contact with her.\n" << endl;
-                    Sleep(2000);
-                    cout << "The bus arrives and I sit behind her.\n" << endl;
+					cout << "I can't even make eye contact with her, I'm nervous.\n"
+						 << endl;
+					Sleep(2000);
+					cout << "The bus arrives and I sit behind her.\n" << endl;
                     Sleep(2000);
                     cout << "After 5 minutes the bus stopped and she stood up\n" << endl;
                     Sleep(3000);
@@ -288,9 +301,10 @@ class Prologue{
                     cout << "*hums* uh-.. Y-yeah no problem... *blush*\n" << endl;
                     Sleep(3000);
                     cout << "Inner Monologue" << endl;
-                    cout << "She went out of the bus stop, but I kept looking at her because she's really... really beautiful.\n" << endl;
-                    Sleep(3000);
-                    cout << "End of Prologue\n" << endl;
+					cout << "She went out of the bus stop, but I was too shy to look at ehr.\n"
+						 << endl;
+					Sleep(3000);
+					cout << "End of Prologue\n" << endl;
                     break;
                 }
                 else
@@ -304,75 +318,174 @@ class Prologue{
     
         
       };
-	void pick(){
-		cout << "\n\n";
-		Sleep(3000);
-		cout << "I've met 3 girls on my first day of school."<< endl << endl;
-		Sleep(3000);
-		cout << "If I would ever choose the right girl for me from those 3 girls who should it be?" << endl << endl;
-		Sleep(3000);
-		cout << "[1] Angel \n[2] Kym \n[3] Liah\n\noption: ";
-		getline(cin, girl);
-		cout << "\n\n";
-		while(true){
-		if(girl=="1"){
-			Sleep(3000);
-			cout << "I would probably like Angel." << endl;
-			break;}
-		else if(girl=="2"){
-			Sleep(3000);
-			cout << "I would probably like Kym." << endl;
-			break;}
-		else if(girl=="3"){
-			Sleep(3000);
-			cout << "I would probably like Liah." << endl;
-			break;
-		}
+	  void pick()
+	  {
+		  cout << "\n\n";
+		  Sleep(3000);
+		  cout << "I've met 3 girls on my first day of school." << endl
+			   << endl;
+		  Sleep(3000);
+		  cout << "If I would ever choose the right girl for me from those 3 girls who should it be?" << endl
+			   << endl;
+		  Sleep(3000);
+		  cout << "[1] Angel \n[2] Kym \n[3] Liah\n\noption: ";
+		  getline(cin, girl);
+		  cout << "\n\n";
+		  while (true)
+		  {
+			  if (girl == "1")
+			  {
+				  Sleep(3000);
+				  cout << "I would probably like Angel." << endl;
+				  break;
+			  }
+			  else if (girl == "2")
+			  {
+				  Sleep(3000);
+				  cout << "I would probably like Kym." << endl;
+				  break;
+			  }
+			  else if (girl == "3")
+			  {
+				  Sleep(3000);
+				  cout << "I would probably like Liah." << endl;
+				  break;
+			  }
 
-		else
-		{
-			Sleep(3000);
-			cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
-	  			getline(cin, None);};}
-		
+			  else
+			  {
+				  Sleep(3000);
+				  cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
+				  getline(cin, None);
+			  };
+		  }
+	  };
+};
+
+class Cath
+{
+public:
+	string name;
+	string None;
+
+	Cath(string name)
+	{
+		name = name;
 	};
 
+	void scene1()
+	{
+		cout << name;
 
-   
+		Sleep(3000);
+		cout << "Day 2\n"
+			 << endl;
+		cout << "Inner Monologue" << endl;
+		Sleep(3000);
+		cout << "[MC]: *sigh* I'm late again\n"
+			 << endl;
+		Sleep(3000);
+		cout << "*random background class noise*\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Teacher]: Mr. " << name << " you're late again. You can't keep getting late. It's literally your 1st week and you're already late twice.\n"
+			 << endl;
+		cout << "[Teacher]: Please sit down so I can start my class.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Sorry for being late. This won't happen again.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		Sleep(3000);
+		cout << "Someone is sitting on the chair I used yesterday. Where do I sit now...\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Liah]: What are you lookin' at?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Teacher]: Sit down already there is a vacant seat at the back.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		Sleep(3000);
+		cout << "I sat down and looked on my left and I freakin saw my future through the eyes of the person sitting beside me.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "It's Cath again. I didn't realize yesterday that she's this beautiful since it was dark already.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Hello again!\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Uh-hey! Cath, right?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Yes, and you're " << name << " right?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "*Offers to shake hand*\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Responses:\n[1] Shake her hand.\n Inner Monologue: Her hand is so soft, I feel like I don't want to let go.\n[2] Don't shake her hand.\n *Cath felt awkward*\n"
+			 << endl;
+		cout << "Option: ";
+
+		getline(cin, None);
+
+		while (true)
+		{
+			// Not final - andrei on docs
+			if (None == "1")
+			{
+				Sleep(3000);
+				cout << "[Cath]: Thanks for helping me again.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: No problem.\n"
+					 << endl;
+				break;
+			}
+			else if (None == "2")
+			{
+				Sleep(3000);
+				cout << "I'm glad you're safe.\n"
+					 << endl;
+				cout << "You should stop sleeping in school\n"
+					 << endl;
+				Sleep(3000);
+				cout << "Thanks for your concern. Good thing this school has a great president.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "Haha. Thanks.\n"
+					 << endl;
+			}
+			else
+			{
+				cout << "Not an Option\n Please choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
+			}
+		}
+	};
 };
 
-class Kim{
-   public:
-   	string name;
-
-   	Kim(string name){
-         name = name;
-   	};
-
-   	void scene1(){
-    	cout << name;
-    };
-    
-
-   
-      
-};
-
-class Angel{
-   public:
-   	string name;
+class Angel
+{
+public:
+	string name;
    	Angel(string name){
          name = name;
    	};
     
    	void scene1(){
     	cout << name;
-    }
+	}
 };
 
-class Liah{
-   public:
-   	string name;
+class Liah
+{
+public:
+	string name;
    	Liah(string name){
          name = name;
    	};
@@ -389,7 +502,7 @@ int main()
    Intro intro;
    Prologue prologue;
    Angel angel(name);
-   Kim kim(name);
+   Cath cath(name);
    Liah liah(name);
    
    intro.run();
