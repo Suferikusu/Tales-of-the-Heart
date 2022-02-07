@@ -362,6 +362,7 @@ class Prologue{
 	  };
 };
 
+// Cath route
 class Cath
 {
 public:
@@ -430,7 +431,6 @@ public:
 		cout << "Responses:\n[1] Shake her hand.\n Inner Monologue: Her hand is so soft, I feel like I don't want to let go.\n[2] Don't shake her hand.\n *Cath felt awkward*\n"
 			 << endl;
 		cout << "Option: ";
-
 		getline(cin, None);
 
 		while (true)
@@ -466,19 +466,110 @@ public:
 				getline(cin, None);
 			}
 		}
-	};
+	}
+	void scene2()
+	{
+		Sleep(3000);
+		cout << "[MC]: How did you even become a president on the first day of school?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: It's not like I wanted to be a president.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Responses:\n[1] Why did you run as school president if you don't want it in the first place?\n[2] Why do you not want to be president?\n"
+			 << endl;
+		cout << "Option: ";
+
+		getline(cin, None);
+
+		while (true)
+		{
+			if (None == "1")
+			{
+				Sleep(3000);
+				cout << "[Cath]: I didn't, the school board and the students just elected me because they saw my past school records and they're amazed.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: My sister was the last school president. She graduated so they replaced her with me.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: I don't even want it. Being the school president makes the teachers think that I'm their personal assistant\n"
+					 << endl;
+			}
+			else if (None == "2")
+			{
+				Sleep(3000);
+				cout << "[Cath]: Teachers give me orders left and right. They think that I'm sort of their personal assistant.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: They made me carry their belongings and check the test papers. They put so much pressure on me\n"
+					 << endl;
+			}
+			else
+			{
+				cout << "Not an Option\n Please choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
+			}
+		}
+	}
 };
 
+// Angel Route
 class Angel
 {
 public:
 	string name;
-   	Angel(string name){
-         name = name;
-   	};
-    
-   	void scene1(){
-    	cout << name;
+	string None;
+	Angel(string name)
+	{
+		name = name;
+	};
+
+	void scene1()
+	{
+		cout << name;
+		Sleep(3000);
+		cout << "*Aurora*" << endl;
+		cout << "I was walking up the stairs when I saw this slow girl climbing up the stairs for some reason.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "*Lunch Break*\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "I was going to the cafeteria then I saw this sluggish girl drop her books on the way up the stairs.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Responses:\n[1] Help her *Looks at the girl* Are you okay?\n[2] Ignore her *walks like nothing happened*\n\nOption: " << endl;
+		getline(cin, None);
+
+		while (true)
+		{
+			if (None == "1")
+			{
+				Sleep(3000);
+				cout << "[Angel]: Thank you, uhm *surprised* ..oh it's you kohai! What's your name again?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Oh didn't notice it's you again. I'm " << name << " from 1-A." << endl;
+				Sleep(3000);
+				cout << "[Angel]: Thank you again for helping me the other day. I forgot to introduce myself.\n"
+					 << endl;
+				cout << "[Angel]: I'm Angel Walton from 2-A\n"
+					 << endl;
+				break;
+			}
+			else if (None == "2")
+			{
+				break;
+			}
+			else
+			{
+				cout << "Not an Option\n Please choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
+			}
+		}
 	}
 };
 
@@ -486,13 +577,15 @@ class Liah
 {
 public:
 	string name;
-   	Liah(string name){
-         name = name;
-   	};
+	Liah(string name)
+	{
+		name = name;
+	};
 
-    void scene1(){
-    	cout << name;
-    }
+	void scene1()
+	{
+		cout << name;
+	}
 };
 
 int main()
