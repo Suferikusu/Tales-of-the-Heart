@@ -1,4 +1,4 @@
-#include <iostream>
+	#include <iostream>
 #include <string>
 // The <windows.h> header adds the command sleep to delay the time of the game
 #include <windows.h>
@@ -306,32 +306,32 @@ class Prologue{
       };
 	void pick(){
 		cout << "\n\n";
-		Sleep(3000)
+		Sleep(3000);
 		cout << "I've met 3 girls on my first day of school."<< endl << endl;
-		Sleep(3000)
+		Sleep(3000);
 		cout << "If I would ever choose the right girl for me from those 3 girls who should it be?" << endl << endl;
-		Sleep(3000)
+		Sleep(3000);
 		cout << "[1] Angel \n[2] Kym \n[3] Liah\n\noption: ";
 		getline(cin, girl);
 		cout << "\n\n";
 		while(true){
 		if(girl=="1"){
-			Sleep(3000)
+			Sleep(3000);
 			cout << "I would probably like Angel." << endl;
 			break;}
 		else if(girl=="2"){
-			Sleep(3000)
+			Sleep(3000);
 			cout << "I would probably like Kym." << endl;
 			break;}
 		else if(girl=="3"){
-			Sleep(3000)
+			Sleep(3000);
 			cout << "I would probably like Liah." << endl;
 			break;
 		}
 
 		else
 		{
-			Sleep(3000)
+			Sleep(3000);
 			cout << "Not an Option\nPlease choose a valid option\n\nOption: " << endl;
 	  			getline(cin, None);};}
 		
@@ -421,4 +421,4 @@ int main()
    }
   
   return 0;
-};
+ }
