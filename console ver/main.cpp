@@ -884,8 +884,134 @@ public:
 		{
 			if (None == "1")
 			{
+				Sleep(3000);
+				cout << "[MC]: Fine.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "*Bell Rung*\n"
+					 << endl;
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "I head home for the day\n"
+					 << endl;
+				Sleep(3000);
+				cout << "*Day End*\n"
+					 << endl;
+				break;
+			}
+			else if (None == "2")
+			{
+				Sleep(3000);
+				cout << "[MC]: Fine, but I'll wait for you.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Are you sure? it's probably gonna take hours.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Yeah.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Okay, if you insist.\n"
+					 << endl;
+
+				Sleep(3000);
+				cout << "Inner Monologue." << endl;
+				cout << "I waited so long I fell asleep.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[???]: Hey.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Ugh. Cath? is that you?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[???]: Wake up.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: I'm Ms. Joan, are you waiting for Cath?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Yeah, where is she?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: In the clinic we are almost finished.\n"
+					 << endl;
+				cout << "[Ms.Joan]: You should come with me.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "I followed her.\n"
+					 << endl;
+				cout << "We talked a bit while we were walking.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: Why are you waiting for her so late? Are you her boyfriend?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: HEH? NO MA'AM, I'M JUST HER FRIEND. WE LIVE CLOSE TO EACH OTHER SO WE ALWAYS GO HOME TOGETHER.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: *Laughs* Do you like her?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Ehhhh? I don't know? Maybe?... Stop asking me questions ma'am. Are we there yet?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: Yeah it's this room.\n"
+					 << endl;
+
+				Sleep(3000);
+				cout << "*Door SFX*\n"
+					 << endl;
+
+				Sleep(3000);
+				cout << "[Ms.Joan]: Cath? We're back, I brought your bo-... your friend.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Hey.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Hi!\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: So.. " << name << " when are you gonna answer my question?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: What question?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: I'm asking " << name << " if he likes-\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: HEY! look at the time, it's already late. I'll help you so we can all go home early\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: *laughs softly\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: What was the question?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: It doesn't matter.\n"
+					 << endl;
+
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "We finished sorting and arranging the first aid kits. Ms.Joan will distribute them tomorrow.\n"
+					 << endl;
+				cout << "Cath and I head home safely.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "*Day End*\n"
+					 << endl;
 			}
 		}
+	}
+	void scene3()
+	{
+		Sleep(3000);
+		cout << "Many days later\n"
+			 << endl;
 	}
 };
 
