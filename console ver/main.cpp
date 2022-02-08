@@ -459,6 +459,7 @@ public:
 				Sleep(3000);
 				cout << "Haha. Thanks.\n"
 					 << endl;
+				break;
 			}
 			else
 			{
@@ -495,6 +496,7 @@ public:
 				Sleep(3000);
 				cout << "[Cath]: I don't even want it. Being the school president makes the teachers think that I'm their personal assistant\n"
 					 << endl;
+				break;
 			}
 			else if (None == "2")
 			{
@@ -504,11 +506,384 @@ public:
 				Sleep(3000);
 				cout << "[Cath]: They made me carry their belongings and check the test papers. They put so much pressure on me\n"
 					 << endl;
+				break;
 			}
 			else
 			{
 				cout << "Not an Option\n Please choose a valid option\n\nOption: " << endl;
 				getline(cin, None);
+			}
+		}
+		Sleep(3000);
+		cout << "Responses\n[1] *Offer your help again*\n [2] Tell her to shut up and just do her job without complaining\n"
+			 << endl;
+		cout << "Option: ";
+		getline(cin, None);
+
+		while (true)
+		{
+			if (None == "1")
+			{
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "[MC]: Our conversation lasted for the whole class. I didn't understand anything in class.\n"
+					 << endl;
+				break;
+			}
+			else if (None == "2")
+			{
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "There was a long awkward silence after that. The silence was louder than whatever our teacher was saying.\n"
+					 << endl;
+				cout << "I didn't understand anything in class.\n"
+					 << endl;
+				break;
+			}
+			else
+			{
+				cout << "Nont an Option\n Please choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
+			}
+		}
+		Sleep(3000);
+		cout << "Later that day\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		cout << "[MC]: Today was exhausting. I should probably get home by now.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "[???]: Ugh, Why do I have to clean? They should've appointed cleaners by now already.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		cout << "[MC]: It's Cath. I should take a look\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "[MC]: Hey!\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Hi.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Why are you cleaning by yourself?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Our Great Adviser hasn't appointed the daily cleaners yet, so I'm the maid for a while.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "Responses\n[1] Offer Help\n[2] Go home\n[3] ..." << endl;
+		cout << "Option: ";
+		getline(cin, None);
+
+		while (true)
+		{
+			if (None == "1")
+			{
+				Sleep(3000);
+				cout << "[Cath]: No thanks, I can handle this, it's just a small room.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: I insist, we could finish faster if you let me help.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Fine, Thank you. I appreciate it... really.\n"
+					 << endl;
+
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "After a while\n"
+					 << endl;
+
+				Sleep(3000);
+				cout << "[MC]: That was exhausting. We finally cleaned the whole room.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Yeah, Thank you again.\n"
+					 << endl;
+
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "We walked home together.\n"
+					 << endl;
+				break;
+			}
+			else if (None == "2")
+			{
+				Sleep(3000);
+				cout << "Inner Monologue" << endl;
+				cout << "I can't wait to get home\n"
+					 << endl;
+				break;
+			}
+			else if (None == "3")
+			{
+				Sleep(3000);
+				cout << "[MC]: .... *continues to clean as I watch her*\n"
+					 << endl;
+				break;
+			}
+			else
+			{
+				cout << "Not an option\nPlease choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
+			}
+		}
+	}
+	void scene3()
+	{
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		cout << "[MC]: Damn, I'm so early today. No one is in the class yet.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "*Door Noises\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "[Cath]: Good morning!\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Oh hi, good morning.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: You're early today.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Yeah. I don't want Mr. Sammy to get angry at me again.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Haha yeah. I hate that guy.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Why?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: He looks at other studnets weirdly. I always noticed him looking at me at the faculty.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "Responses\n[1] That Blockhead.\n[2] He's probably a desperate lonely man." << endl;
+		cout << "Option: ";
+		getline(cin, None);
+
+		while (true)
+		{
+			if (None == "1")
+			{
+				Sleep(3000);
+				cout << "[Cath]: I know right? You know what's worse?\n"
+					 << endl;
+				cout << "[Cath]: He's married!\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Why would he do that then? You should report him or something.\n"
+					 << endl;
+				break;
+			}
+			else if (None == "2")
+			{
+				Sleep(3000);
+				cout << "[Cath]: No, he's married. I saw a wedding picture in his office.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Why would he do that then? You should report him or something\n"
+					 << endl;
+				break;
+			}
+			else
+			{
+				cout << "Not an option\nPlease choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
+			}
+		}
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		cout << "We talked for a while. I listened to her all the time. She just keeps ranting about how she despises Sir Sammy.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "*bell rings*" << endl;
+		cout << "I didn't realize that the room was already full.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Mr.Sammy]: Good morning class.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Class]: Goodmorning.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "...\n..." << endl;
+
+		Sleep(3000);
+		cout << "[???]: Wake up " << name << " .\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Huh? Ugh...\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Hey " << name << ". Wake up, the clss is over. You slept the whole time.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Oh, my bad. Did he notice?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: He didn't, you should stop staying up all night, it's not health.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Responses\n[1] But when am I gonna play Magic Legends?\n[2] Yeah, I'll try.\n[3] No way." << endl;
+		cout << "Option: ";
+		getline(cin, None);
+
+		while (true)
+		{
+			if (None == "1")
+			{
+				Sleep(3000);
+				cout << "[Cath]: You still play that game? are you a child or something?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: You can't tell me what to do, you're not my mom. That game is awesome.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Fine. Go die then.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: That's a bit harsh.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Well, I don't want you dying. I'll have no one to talk to.\n"
+					 << endl;
+				break;
+			}
+			else if (None == "2")
+			{
+				Sleep(3000);
+				cout << "[Cath]: Yes. You should really start caring for yourself.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: Why?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Well, I don't want you dying. I'll have no one to talk to.\n"
+					 << endl;
+				break;
+			}
+			else if (None == "3")
+			{
+				Sleep(3000);
+				cout << "[Cath]: Fine. Go die then.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: That's a bit harsh.\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: Well, I don't want you dying. I'll have no one to talk to.\n"
+					 << endl;
+				break;
+			}
+			else
+			{
+				cout << "Not a response\nPlease choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
+			}
+		}
+		Sleep(3000);
+		cout << "[MC]: Why don't you have befriend our other classmates?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Ehhh. I don't really want to.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Are you some sort of Introbear?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: It's called Introvert. How stupid are you really?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Hahahaha. How could you call me stupid. I'm probably smarter than you.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: No way you are.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Let's see. My GPA in highschool is 89.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Pfft. Is that supposed to scare me? Mine's 98.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: What? How can you get it that high? That's impossible. I call cap.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: No, it's real. I'll show you my card next time.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Until then I qwon't believe that you're smarter than me.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: You literally slept in class. How could you learn something?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Shut up.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Haha stupid.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Lunch Break is almost over, we should eat.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: I already ate when you were sleeping.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: What? You didn't even wake me up earlier.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: I tried to, you're so deep in sleep I can't wake you up.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Ugh.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "Later that day\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		cout << "Finally school is almost over. I should probably invite Cath to walk home together.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Hey!\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Hey.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Wanna go home together after this class?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: I can't Ms. Joan asked me to help her at the school clinic. Apparently the new first aid kit packs arrived and asked me for help.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Want me to help?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: No thanks, Ms. Joan specifically told me to come alone. She doesnt't want many people to be at her clinic.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Responses\n[1] Go home\n[2] Wait for her" << endl;
+		cout << "Option: ";
+		getline(cin, None);
+
+		while (true)
+		{
+			if (None == "1")
+			{
 			}
 		}
 	}
