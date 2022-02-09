@@ -1290,6 +1290,94 @@ public:
 				cout << "[MC]: No worries ma'am. We were just talking.\n"
 					 << endl;
 				Sleep(3000);
+				cout << "[Ms.Joan]: What are you two lovebirds talking about?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC and Cath]: Ehhhh?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: *chuckles*\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Inner Monologue]" << endl;
+				cout << "They left.\n"
+					 << endl;
+				break;
+			}
+			else if (None == "3")
+			{
+				Sleep(3000);
+				cout << "[MC]: Why can't you ask other students instead?!?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Ms.Joan]: What?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[MC]: I said why can't you ask other students. Why do you always use Cath for these tasks? Cant you see we were busy?\n"
+					 << endl;
+				Sleep(3000);
+				cout << "[Cath]: No " << name << " it's okay. She asked me properly and I accepte it.\n"
+					 << endl;
+				break;
+				Sleep(3000);
+				cout << "Responses\n[1] Continue to get angry\n[2] Calm down" << endl;
+				cout << "Option: ";
+				getline(cin, None);
+
+				while (true)
+				{
+					if (None == "1")
+					{
+						Sleep(3000);
+						cout << "[MC]: They can't continue mistreating you! This is wrong.\n"
+							 << endl;
+						Sleep(3000);
+						cout << "[Ms.Joan]: *Cries*\n"
+							 << endl;
+						Sleep(3000);
+						cout << "[Cath]: Would you please just stop.\n"
+							 << endl;
+						Sleep(3000);
+						cout << "[Von Fischer]: Hey what's happening?\n"
+							 << endl;
+						cout << "[Von Fischer]:  Who made Miss Joan cry?\n"
+							 << endl;
+						cout << "[Von Fischer]: I can't accept this.\n"
+							 << endl;
+						Sleep(3000);
+						cout << "Inner Monologue" << endl;
+						cout << "This got escalated quickly. I shouldn't have done that.\n"
+							 << endl;
+						cout << "Days later Cath still won't talk to me, and my classmates keep giving me those weird looks. I decided to drop out.\n"
+							 << endl;
+						break; // still don't know how to prompt user to quit, restart etc.
+					}
+					else if (None == "2")
+					{
+						Sleep(3000);
+						cout << "[MC]: I'm so sorry Miss Joan if I got angry.\n"
+							 << endl;
+						Sleep(3000);
+						cout << "[Ms.Joan]: *smiles* No, it's okay. I totally understand where you're coming from. You're just protecting your friend here.\n"
+							 << endl;
+						Sleep(3000);
+						cout << "[Cath]: Thanks " << name << ".\n"
+							 << endl;
+						Sleep(3000);
+						cout << "[Ms.Joan]: Don't worry, I won't let anything bad happen to your friend.\n"
+							 << endl;
+						Sleep(3000);
+						cout << "Inner Monologue" << endl;
+						cout << "They left. I'm glad Ms.Joan treats her students right.\n"
+							 << endl;
+						break;
+					}
+				}
+			}
+			else
+			{
+				cout << "Not a response\nPlease choose a valid option\n\nOption: " << endl;
+				getline(cin, None);
 			}
 		}
 	}
