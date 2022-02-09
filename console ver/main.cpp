@@ -368,6 +368,7 @@ class Cath
 public:
 	string name;
 	string None;
+	int headhome;
 
 	Cath(string name)
 	{
@@ -897,10 +898,13 @@ public:
 				Sleep(3000);
 				cout << "*Day End*\n"
 					 << endl;
+				
+				headhome = 1;
 				break;
 			}
 			else if (None == "2")
 			{
+				headhome = 0;
 				Sleep(3000);
 				cout << "[MC]: Fine, but I'll wait for you.\n"
 					 << endl;
@@ -1013,7 +1017,7 @@ public:
 			}
 		}
 	}
-	void scene3()
+	void scene4()
 	{
 		Sleep(3000);
 		cout << "Many days later\n"
@@ -1026,6 +1030,10 @@ public:
 		cout << "Two weeks have passed, Cath and I became close friends.\n"
 			 << endl;
 		// here's the part idk
+		if (headhome == 1)
+		{
+			cout << "I met an amazing teacher. Her name is Ms. Joan. She's pretty sweet." << endl << endl;
+		};
 
 		Sleep(3000);
 		cout << "*THUMP*\n"
@@ -1071,6 +1079,7 @@ public:
 					 << endl;
 				break;
 				// not yet done; you have to prompt the user to game over or play again or quit
+				
 			}
 			else if (None == "2")
 			{
@@ -1185,7 +1194,7 @@ public:
 		cout << "Day End.\n"
 			 << endl;
 	}
-	void scene4()
+	void scene5()
 	{
 		Sleep(3000);
 		cout << "Day 23 Part 1\n"
@@ -1442,7 +1451,7 @@ public:
 		cout << "[MC]: Yeah. No problem *Attempting to shake hands*.\n"
 			 << endl;
 	}
-	void scene4()
+	void scene6()
 	{
 		Sleep(3000);
 		cout << "Day 23 Part 2 The Art\n"
@@ -1732,12 +1741,21 @@ int main()
     // Checks if the user wants to play
    if(intro.ask() == 1)
    {
-     // prologue.scene1();
-     // prologue.scene2();
+      prologue.scene1();
+      prologue.scene2();
       prologue.scene3();
       prologue.pick();
+	   
 
       name = prologue.name;
+      cath.scene1();
+      cath.scene2();
+      cath.scene3();
+      cath.scene4();
+      cath.scene5();
+      cath.scene6();
+      
+      
       angel.scene1();
 
 
