@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <conio.h>
 // The <windows.h> header adds the command sleep to delay the time of the game
 #include <windows.h>
 
@@ -17,8 +18,9 @@ class Intro
 		 cout << "                (Tales of the Heart)" << endl;
 		 cout << "       Press any key to continue." << endl;
 		 cout << "------------------------------------------------"<< endl;
-
-      }
+		 // from C can be implemented here holds the output until user press any key
+		 getch();
+	  }
 
       // This method will ask the user to input yes or no if they wanna play 
       // It will return an Integer value of 1 to 0
