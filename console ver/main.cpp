@@ -369,7 +369,6 @@ public:
 	string name;
 	string None;
 	int headhome;
-	bool quit = false;
 
 	Cath(string name)
 	{
