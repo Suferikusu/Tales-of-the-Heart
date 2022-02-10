@@ -1,4 +1,4 @@
-	#include <iostream>
+#include <iostream>
 #include <string>
 // The <windows.h> header adds the command sleep to delay the time of the game
 #include <windows.h>
@@ -14,9 +14,9 @@ class Intro
       	// Title of the game
       	 cout << "------------------------------------------------"<< endl;
          cout << " Dating Simulator made by Group 2 in MCS102 BSU" << endl;
-         cout << "                (Title)" << endl;
-         cout << "       Press any key to continue." << endl;
-      	 cout << "------------------------------------------------"<< endl;
+		 cout << "                (Tales of the Heart)" << endl;
+		 cout << "       Press any key to continue." << endl;
+		 cout << "------------------------------------------------"<< endl;
 
       }
 
@@ -142,7 +142,7 @@ class Prologue{
 					getline(cin, None);
 				}
 			};
-		}
+		};
 
 		// Second Scene in the Prologue
 		// Almost the same as the first scene
@@ -256,7 +256,7 @@ class Prologue{
             Sleep(3000);
             cout << "*I noticed that she's carrying something big*\n" << endl;
             Sleep(3000);
-            cout << "Responses:\n[1] Go back to sleep.\n[2] Ask her to sleep beside you.\n [3] Go home by yourself and mind your own business.\n [4] Help her carry that something big\n" << endl;
+            cout << "Responses:\n[1] Go back to sleep.\n[2] Ask her to sleep beside you.\n[3] Go home by yourself and mind your own business.\n[4] Help her carry that something big\n" << endl;
             cout << "Option: ";
             getline(cin, None);
 
@@ -279,7 +279,7 @@ class Prologue{
                     Sleep(3000);
                     cout << "[MC]: Hey, do you need help with that thing?\n" << endl;
                     Sleep(3000);
-                    cout << "Yeah... *blush*\n" << endl;
+                    cout << "[Cath]: Yeah... *blush*\n" << endl;
                     Sleep(3000);
                     cout << "Inner Monologue" << endl;
                     cout << "I carried the big thing that she was carrying and accompanied her to the bus stop.\n" << endl;
@@ -296,9 +296,9 @@ class Prologue{
                     Sleep(2000);
                     cout << "After 5 minutes the bus stopped and she stood up\n" << endl;
                     Sleep(3000);
-                    cout << "Thanks again " << name << ".\n" << endl;
+                    cout << "[Cath]: Thanks again " << name << ".\n" << endl;
                     Sleep(3000);
-                    cout << "*hums* uh-.. Y-yeah no problem... *blush*\n" << endl;
+                    cout << "[MC]: *hums* uh-.. Y-yeah no problem... *blush*\n" << endl;
                     Sleep(3000);
                     cout << "Inner Monologue" << endl;
 					cout << "She went out of the bus stop, but I was too shy to look at ehr.\n"
@@ -328,7 +328,7 @@ class Prologue{
 		  cout << "If I would ever choose the right girl for me from those 3 girls who should it be?" << endl
 			   << endl;
 		  Sleep(3000);
-		  cout << "[1] Angel \n[2] Kym \n[3] Liah\n\noption: ";
+		  cout << "[1] Angel \n[2] Cath \n[3] Liah\n\nOption: ";
 		  getline(cin, girl);
 		  cout << "\n\n";
 		  while (true)
@@ -342,7 +342,7 @@ class Prologue{
 			  else if (girl == "2")
 			  {
 				  Sleep(3000);
-				  cout << "I would probably like Kym." << endl;
+				  cout << "I would probably like Cath." << endl;
 				  break;
 			  }
 			  else if (girl == "3")
@@ -368,6 +368,8 @@ class Cath
 public:
 	string name;
 	string None;
+	int headhome;
+	bool quit = false;
 
 	Cath(string name)
 	{
@@ -383,7 +385,7 @@ public:
 			 << endl;
 		cout << "Inner Monologue" << endl;
 		Sleep(3000);
-		cout << "[MC]: *sigh* I'm late again\n"
+		cout << "*sigh* I'm late again\n"
 			 << endl;
 		Sleep(3000);
 		cout << "*random background class noise*\n"
@@ -515,7 +517,7 @@ public:
 			}
 		}
 		Sleep(3000);
-		cout << "Responses\n[1] *Offer your help again*\n [2] Tell her to shut up and just do her job without complaining\n"
+		cout << "Responses\n[1] *Offer your help again*\n[2] Tell her to shut up and just do her job without complaining\n"
 			 << endl;
 		cout << "Option: ";
 		getline(cin, None);
@@ -551,7 +553,7 @@ public:
 			 << endl;
 		Sleep(3000);
 		cout << "Inner Monologue" << endl;
-		cout << "[MC]: Today was exhausting. I should probably get home by now.\n"
+		cout << "Today was exhausting. I should probably get home by now.\n"
 			 << endl;
 
 		Sleep(3000);
@@ -639,7 +641,7 @@ public:
 	{
 		Sleep(3000);
 		cout << "Inner Monologue" << endl;
-		cout << "[MC]: Damn, I'm so early today. No one is in the class yet.\n"
+		cout << "Damn, I'm so early today. No one is in the class yet.\n"
 			 << endl;
 		Sleep(3000);
 		cout << "*Door Noises\n"
@@ -823,7 +825,7 @@ public:
 		cout << "[Cath]: No, it's real. I'll show you my card next time.\n"
 			 << endl;
 		Sleep(3000);
-		cout << "[MC]: Until then I qwon't believe that you're smarter than me.\n"
+		cout << "[MC]: Until then I won't believe that you're smarter than me.\n"
 			 << endl;
 		Sleep(3000);
 		cout << "[Cath]: You literally slept in class. How could you learn something?\n"
@@ -897,10 +899,13 @@ public:
 				Sleep(3000);
 				cout << "*Day End*\n"
 					 << endl;
+
+				headhome = 1;
 				break;
 			}
 			else if (None == "2")
 			{
+				headhome = 0;
 				Sleep(3000);
 				cout << "[MC]: Fine, but I'll wait for you.\n"
 					 << endl;
@@ -1013,7 +1018,7 @@ public:
 			}
 		}
 	}
-	void scene3()
+	void scene4()
 	{
 		Sleep(3000);
 		cout << "Many days later\n"
@@ -1025,7 +1030,11 @@ public:
 		cout << "Inner Monologue" << endl;
 		cout << "Two weeks have passed, Cath and I became close friends.\n"
 			 << endl;
-		// here's the part idk
+		if (headhome == 2)
+		{
+			cout << "I met an amazing teacher. Her name is Ms. Joan. She's pretty sweet." << endl
+				 << endl;
+		};
 
 		Sleep(3000);
 		cout << "*THUMP*\n"
@@ -1071,6 +1080,7 @@ public:
 					 << endl;
 				break;
 				// not yet done; you have to prompt the user to game over or play again or quit
+				
 			}
 			else if (None == "2")
 			{
@@ -1185,7 +1195,7 @@ public:
 		cout << "Day End.\n"
 			 << endl;
 	}
-	void scene4()
+	void scene5()
 	{
 		Sleep(3000);
 		cout << "Day 23 Part 1\n"
@@ -1442,7 +1452,7 @@ public:
 		cout << "[MC]: Yeah. No problem *Attempting to shake hands*.\n"
 			 << endl;
 	}
-	void scene4()
+	void scene6()
 	{
 		Sleep(3000);
 		cout << "Day 23 Part 2 The Art\n"
@@ -1732,19 +1742,22 @@ int main()
     // Checks if the user wants to play
    if(intro.ask() == 1)
    {
-     // prologue.scene1();
-     // prologue.scene2();
-      prologue.scene3();
-      prologue.pick();
+	   prologue.scene1();
+	   prologue.scene2();
+	   prologue.scene3();
+	   prologue.pick();
 
-      name = prologue.name;
-      angel.scene1();
+	   name = prologue.name;
+	   cath.scene1();
+	   cath.scene2();
+	   cath.scene3();
+	   cath.scene4();
+	   cath.scene5();
+	   cath.scene6();
 
+	   angel.scene1();
 
-
-
-
-   	cin >> None;
+	   cin >> None;
    }
     // IF the user doesn't want to play then run this
    else
@@ -1757,4 +1770,4 @@ int main()
    }
   
   return 0;
- }
+}
