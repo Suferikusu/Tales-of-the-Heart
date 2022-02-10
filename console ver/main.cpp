@@ -1361,7 +1361,8 @@ public:
 							 << endl;
 						cout << "Days later Cath still won't talk to me, and my classmates keep giving me those weird looks. I decided to drop out.\n"
 							 << endl;
-						break; // still don't know how to prompt user to quit, restart etc.
+						break;
+						// still don't know how to prompt user to quit, restart etc.
 					}
 					else if (None == "2")
 					{
@@ -1646,12 +1647,93 @@ public:
 		cout << "...\n"
 			 << endl;
 		Sleep(3000);
-		cout << "[MC]:  Wow. This looks great. I love it.\n"
+		cout << "[MC]: Beautiful. This looks like it was painted by God himself. Wait a minute, are you a Goddess?\n"
 			 << endl;
 		Sleep(3000);
-		cout << "[Cath]: Thanks. I really appreciate your feedback, not everyone likes what I do.\n"
+		cout << "[Cath]: *smiles* Thanks. I really appreciate your feedback. I love getting feedback about my work. It makes me feel like you're interested in my art.\n"
 			 << endl;
 		Sleep(3000);
+		cout << "[MC]: I am interested in your art. You never told me that you're an artist.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: I'm not Proud being an artist.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: But why?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Well...my dad told me that hobbies aren't as important as my career. Het told me to focus on studying, and he keeps-..\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Abby]: HEY! time to eat *smug*. Oh did I interrupt something important?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: No, not really. " << name << " lets eat.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Abby]: Yeah bro let's eat, the food would get cold.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		cout << "We ate dinner, Abby keeps asking embarrassing questions. Cath is so smart she's able to answer them safely.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Abby]: Hey it's almost 8 o'clock. You should let your friend go home, her parents might worry\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Aight.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Thanks for having me in, and thank you for the meal. See you " << name << " tomorrow.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Abby]: Wait. Are you just walking home?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Abby]: I can drive you there.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Thanks.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Inner Monologue" << endl;
+		cout << "I didn't get to hear Cath's story, maybe I can ask her tomorrow.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "Day end.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "Day 24 The Project\n"
+			 << endl;
+		cout << "School.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: Hey! Did you finish the essay?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: No. I'm still halfway through.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Cath]: So your house again? Tonight?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Yes.\n"
+			 << endl;
+		Sleep(3000);
+		cout << "*Ringtone*\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[MC]: Excuse me.\n"
+			 << endl;
+
+		Sleep(3000);
+		cout << "[MC]: Hello?\n"
+			 << endl;
+		Sleep(3000);
+		cout << "[Abby]: Hey bro.\n"
+			 << endl;
 	}
 };
 
